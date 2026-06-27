@@ -1,7 +1,7 @@
 name: Build App With Pake CLI
 
 env:
-  NODE_VERSION: "22"
+  NODE_VERSION: "20"
   PNPM_VERSION: "10.26.2"
 
 on:
@@ -13,8 +13,10 @@ on:
         default: "macos-latest"
         type: choice
         options:
+          - 'macos-latest'
+          - 'macos-15'
+          - 'macos-14'
           - "windows-latest"
-          - "macos-latest"
           - "ubuntu-24.04"
       url:
         description: "Website URL"
